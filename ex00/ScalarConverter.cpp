@@ -11,7 +11,7 @@ ScalarConverter::ScalarConverter( const ScalarConverter &S ){
 
 ScalarConverter& ScalarConverter::operator=( const ScalarConverter &S ){
 	std::cout << "ScalarConverter Copy created!\n";
-	(void) &S;	
+	(void) &S;
 		
 	return (*this);
 }
