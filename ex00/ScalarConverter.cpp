@@ -24,7 +24,9 @@ void ScalarConverter::convert(const std::string &s){
 	std::cout << "string:\t" << s << "\t";
 	switch(whichType(s))
 	{
-		case 1:	std::cout << "exception found\n" << std::endl;
+		case 1:	std::cout << "exception found\n" << std::endl \
+		<< "char:\timpossible\nint:\timpossible\n" \
+		<< "float:\tnanf\ndouble:\tnan" << std::endl;
 			break;
 		case 2:	std::cout << "char found\n" << std::endl;
 			convertCharacter(s);

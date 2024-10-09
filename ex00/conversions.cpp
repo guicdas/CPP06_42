@@ -84,8 +84,7 @@ void	convertInt(const std::string &s){
 	else
 		std::cout << "char:\tNon displayable character!" << std::endl;
 	std::cout << "int:\t" << num << std::endl;
-	std::cout << std::fixed << std::setprecision(1) << "float:\t" \
-	<< round(static_cast<float>(num)) << "f" << std::endl;
+	std::cout << std::fixed << std::setprecision(1) << "float:\t" << static_cast<float>(num) << "f" << std::endl;
 	std::cout << std::fixed << std::setprecision(1) << "double:\t" << static_cast<double>(num) << std::endl;
 }
 
@@ -95,14 +94,8 @@ void	convertFloat(const std::string &s){
 	num = strtof(s.c_str(), NULL);
 	std::cout << "char:\t'" << static_cast<char>(num) << "'" << std::endl;
 	std::cout << "int:\t" << static_cast<int>(num) << std::endl;
-	std::cout << "float:\t" << static_cast<float>(num);
-	if (remainder(num, 1.0) == 0)
-		std::cout << ".0f" << std::endl;
-	else
-		std::cout << std::endl;
-	std::cout << "double:\t" << num;
-	if (remainder(num, 1.0) == 0)
-		std::cout << ".0";
+	std::cout << std::fixed << std::setprecision(1) << "float:\t" << static_cast<float>(num) << "f" << std::endl;
+	std::cout << std::fixed << std::setprecision(1) << "double:\t" << num << std::endl;
 }
 
 void	convertDouble(const std::string &s){

@@ -26,6 +26,15 @@ int main( int ac, char **av ){
 			ScalarConverter::convert("-2147483648");
 			ScalarConverter::convert("-2147483649");
 			break;
+		case 'f':
+			ScalarConverter::convert("0.0f");
+			ScalarConverter::convert("2147483647.4f");
+			ScalarConverter::convert("2147483647.0f");
+			ScalarConverter::convert("+2147483647.0f");
+			ScalarConverter::convert("999997483647.0f");
+			ScalarConverter::convert("-inff");
+			ScalarConverter::convert("+inff");
+			break;
 		default:
 			break;
 		}
