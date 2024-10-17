@@ -35,24 +35,24 @@ void	identify(Base *p){
 void	identify(Base& p){
 	try
 	{
-		dynamic_cast<A &>(p);
-		std::cout << "Base &p points to\tA" << std::endl;
+		A &a = dynamic_cast<A &>(p);
+		std::cout << "Base &p points to\tA: " << &a << std::endl;
 		return ;
 	}
 	catch (const std::exception& e){(void) e;}
 	
 	try
 	{
-		dynamic_cast<B &>(p);
-		std::cout << "Base &p points to\tB" << std::endl;
+		B &b = dynamic_cast<B &>(p);
+		std::cout << "Base &p points to\tB: " << &b << std::endl;
 		return ;
 	}
 	catch (const std::exception& e){(void) e;}
 
 	try
 	{
-		dynamic_cast<C &>(p);
-		std::cout << "Base &p points to\tC" << std::endl;
+		C &c = dynamic_cast<C &>(p);
+		std::cout << "Base &p points to\tC: " << &c << std::endl;
 		return ;
 	}
 	catch (const std::exception& e){(void) e;}

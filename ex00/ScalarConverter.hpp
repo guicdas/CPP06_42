@@ -11,7 +11,7 @@
 
 class ScalarConverter{
 	private:
-		ScalarConverter( void );		//class must not be instanciable
+		ScalarConverter( void );
 		ScalarConverter( const ScalarConverter &S );
 		ScalarConverter& operator=( const ScalarConverter &S );
 		~ScalarConverter( void );

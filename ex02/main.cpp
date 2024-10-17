@@ -21,7 +21,7 @@ int main( int ac, char **av ){
 		for (;repeat > 0; repeat--)
 		{
 			Base *BasePointer = generate();
-			std::cout <<"Base Value:\t\t" << &BasePointer << "\n\n";
+			std::cout <<"Base Value:\t\t" << BasePointer << "\n\n";
 
 			std::cout <<"Identifying...\nPointer:\t";
 			identify(BasePointer);

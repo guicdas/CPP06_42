@@ -79,7 +79,7 @@ void	convertInt(const std::string &s){
 	int	num;
 
 	num = atoi(s.c_str());
-	if (isprint(num))
+	if (num > 32 && num < 127)
 		std::cout << "char:\t'" << static_cast<char>(num) << "'" << std::endl;
 	else
 		std::cout << "char:\tNon displayable character!" << std::endl;
