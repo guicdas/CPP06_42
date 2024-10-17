@@ -20,7 +20,7 @@ ScalarConverter::~ScalarConverter( void ){
 }
 
 void ScalarConverter::convert(const std::string &s){
-	std::cout << "/////////////////////\n";
+	std::cout << "/\t\t\t\t//\n";
 	std::cout << "string:\t" << s << "\t";
 	switch(whichType(s))
 	{

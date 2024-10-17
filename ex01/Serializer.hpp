@@ -1,6 +1,7 @@
 #pragma once
 
 #include <iostream>
+#include <stdint.h>
 
 typedef struct Data{
 	int		memberInt1;

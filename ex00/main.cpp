@@ -16,6 +16,7 @@ int main( int ac, char **av ){
 			ScalarConverter::convert("'\n'");
 			ScalarConverter::convert("c");
 			ScalarConverter::convert("}");
+			ScalarConverter::convert("'}'");
 			ScalarConverter::convert("127");
 			break;
 		case 'i':

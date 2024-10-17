@@ -24,5 +24,4 @@ void	convertCharacter(const std::string &string);
 void	convertInt(const std::string &string);
 void	convertFloat(const std::string &string);
 void	convertDouble(const std::string &string);
-
-int  whichType(const std::string& str);
+int		whichType(const std::string& str);
