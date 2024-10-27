@@ -1,6 +1,6 @@
 #include "ScalarConverter.hpp"
 
-static int	isInt(const std::string& s)
+static int	isInt( std::string const &s )
 {
 	int	i;
 	int	num;
@@ -20,7 +20,7 @@ static int	isInt(const std::string& s)
 	return (1);
 }
 
-static int	isFloat(const std::string& s, size_t& dot)
+static int	isFloat( std::string const &s, size_t &dot )
 {
 	for (int i = dot - 1; i >= 0; i--)
 	{
@@ -39,7 +39,7 @@ static int	isFloat(const std::string& s, size_t& dot)
 	return (1);
 }
 
-int  whichType(const std::string& s)
+int  whichType( std::string const &s )
 {
     size_t  dot = s.find('.');
     size_t  f = s.find('f');
@@ -62,7 +62,7 @@ int  whichType(const std::string& s)
     return (0);
 }
 
-void	convertCharacter(const std::string &s){
+void	convertCharacter( std::string const &s ){
 	char	c;
 	
 	if (s[0] != '\'')
@@ -75,7 +75,7 @@ void	convertCharacter(const std::string &s){
 	std::cout << std::fixed << std::setprecision(1) << "double:\t" << static_cast<double>(c) << std::endl;
 }
 
-void	convertInt(const std::string &s){
+void	convertInt( std::string const &s ){
 	int	num;
 
 	num = atoi(s.c_str());
@@ -88,7 +88,7 @@ void	convertInt(const std::string &s){
 	std::cout << std::fixed << std::setprecision(1) << "double:\t" << static_cast<double>(num) << std::endl;
 }
 
-void	convertFloat(const std::string &s){
+void	convertFloat( std::string const &s ){
 	float	num;
 
 	num = strtof(s.c_str(), NULL);
@@ -98,7 +98,7 @@ void	convertFloat(const std::string &s){
 	std::cout << std::fixed << std::setprecision(1) << "double:\t" << num << std::endl;
 }
 
-void	convertDouble(const std::string &s){
+void	convertDouble( std::string const &s ){
 	double	num;
 
 	num = atof(s.c_str());

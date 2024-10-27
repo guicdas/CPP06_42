@@ -19,7 +19,7 @@ ScalarConverter::~ScalarConverter( void ){
 	std::cout << "ScalarConverter destroyed!\n";
 }
 
-void ScalarConverter::convert(const std::string &s){
+void ScalarConverter::convert( std::string const &s ){
 	std::cout << "/\t\t\t\t//\n";
 	std::cout << "string:\t" << s << "\t";
 	switch(whichType(s))

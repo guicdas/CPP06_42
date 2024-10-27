@@ -12,16 +12,16 @@
 class ScalarConverter{
 	private:
 		ScalarConverter( void );
-		ScalarConverter( const ScalarConverter &S );
-		ScalarConverter& operator=( const ScalarConverter &S );
+		ScalarConverter( const ScalarConverter & );
+		ScalarConverter& operator=( const ScalarConverter & );
 		~ScalarConverter( void );
 
 	public:
-		static void convert(const std::string &string);
+		static void convert(const std::string &);
 };
 
-void	convertCharacter(const std::string &string);
-void	convertInt(const std::string &string);
-void	convertFloat(const std::string &string);
-void	convertDouble(const std::string &string);
-int		whichType(const std::string& str);
+void	convertCharacter( const std::string & );
+void	convertInt( const std::string & );
+void	convertFloat( const std::string & );
+void	convertDouble( const std::string & );
+int		whichType( const std::string & );
