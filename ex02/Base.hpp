@@ -7,7 +7,6 @@
 class Base{
 	public:
 		virtual ~Base( void );
-
 };
 
 Base	*generate( void );

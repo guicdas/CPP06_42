@@ -7,7 +7,7 @@ Base::~Base( void ){
 	std::cout << "Base destroyed!\n\n";
 }
 
-Base * generate(void){
+Base * generate( void ){
 	int	randomClass = rand() % 3 + 1;
 	if (randomClass == 1)
 		return (new A());
@@ -20,7 +20,7 @@ Base * generate(void){
 	return (NULL);
 }
 
-void	identify(Base *p){
+void	identify( Base *p ){
 	if (dynamic_cast<A *>(p) != NULL)
 		std::cout << "Base *p points to\tA" << std::endl;
 	else if (dynamic_cast<B *>(p) != NULL)

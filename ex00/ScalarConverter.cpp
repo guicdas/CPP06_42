@@ -4,12 +4,12 @@ ScalarConverter::ScalarConverter( void ){
 	std::cout << "ScalarConverter created by default!\n";
 }
 
-ScalarConverter::ScalarConverter( const ScalarConverter &s ){
+ScalarConverter::ScalarConverter( ScalarConverter const &s ){
 	std::cout << "ScalarConverter Copy created!\n";
 	*this = s;
 }
 
-ScalarConverter& ScalarConverter::operator=( const ScalarConverter &s ){
+ScalarConverter& ScalarConverter::operator=( ScalarConverter const &s ){
 	std::cout << "ScalarConverter Copy created!\n";
 	(void) s;
 	return (*this);

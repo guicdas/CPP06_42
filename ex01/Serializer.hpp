@@ -4,8 +4,8 @@
 #include <stdint.h>
 
 typedef struct Data{
-	int		memberInt1;
-	int		memberInt2;
+	int	memberInt1;
+	int	memberInt2;
 } Data;
 
 class Serializer{
